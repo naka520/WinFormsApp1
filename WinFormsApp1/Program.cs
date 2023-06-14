@@ -15,6 +15,8 @@ namespace WinFormsApp1
 
             PictureBox pictureBox = new PictureBox();
             pictureBox.Image = Image.FromFile("C:\\car.bmp");
+            pictureBox.Top = 100;
+            pictureBox.Left= pictureBox.Width ;
             pictureBox.Parent = fm;
             Application.Run(fm);
 
