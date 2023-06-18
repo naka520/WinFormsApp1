@@ -11,13 +11,16 @@ namespace WinFormsApp1
             Form fm;
             fm = new Form();
             fm.Text = "Hello";
+           
 
 
-            PictureBox pictureBox = new PictureBox();
-            pictureBox.Image = Image.FromFile("C:\\car.bmp");
-            pictureBox.Top = 100;
-            pictureBox.Left= pictureBox.Width ;
-            pictureBox.Parent = fm;
+            PictureBox[] pictureBox = new PictureBox[5];
+            for (int i = 0; i < pictureBox.Length; i++) {
+                pictureBox[i] = new PictureBox();
+                pictureBox[i].Image = Image.FromFile("c:\\car.bmp");
+                pictureBox[i].Top = i*pictureBox[i].Height;
+                pictureBox[i].Parent = fm;
+            }
             Application.Run(fm);
 
 
