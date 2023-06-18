@@ -12,12 +12,20 @@ namespace WinFormsApp1
             fm = new Form();
             fm.Text = "Hello";
             fm.Width = 250; fm.Height = 100;
+            
+
+            string[,] str = new string[4, 3]{
+            { "“Œ‹","Tokyo","‚Æ‚¤‚«‚å‚¤"},
+            { "–¼ŒÃ‰®","Nagoya","‚È‚²‚â"},
+            { "‘åã","Osaka","‚¨‚¨‚³‚©"},
+            { "•Ÿ‰ª","Hukuoka","‚Ó‚­‚¨‚©"}
+            };
             Label lb = new Label();
-            lb.Width = fm.Width; lb.Height=fm.Height;
-            string[] str = new string [3] { "‰”•M", "Á‚µƒSƒ€", "ƒyƒ“" }; 
+            lb.Width = fm.Width; lb.Height = fm.Height;
+            /*string[] str = new string [3] { "‰”•M", "Á‚µƒSƒ€", "ƒyƒ“" }; 
             foreach (string str2 in str) {
              lb.Text += str2+"\n";
-            }
+            }*/
 
             // PictureBox[] pictureBox = new PictureBox[5];
             //for (int i = 0; i < pictureBox.Length; i++) {
